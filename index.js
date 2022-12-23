@@ -1167,5 +1167,5 @@ Peer.config = {
 
 Peer.channelConfig = {}
 
-// module.exports = Peer
-export default Peer
+module.exports = Peer
+// export default Peer
