@@ -9,23 +9,22 @@
   "bugs": {
     "url": "https://github.com/mitschabaude/simple-peer-light/issues"
   },
-  "dependencies": {},
   "devDependencies": {
     "airtap": "^3.0.0",
-    "babel-minify": "^0.5.1",
+    "babel-minify": "^0.5.2",
     "bowser": "^2.11.0",
     "browserify": "^17.0.0",
-    "coveralls": "^3.1.0",
+    "coveralls": "^3.1.1",
     "nyc": "^15.1.0",
     "prettier-bytes": "^1.0.4",
-    "simple-get": "^4.0.0",
+    "simple-get": "^4.0.1",
     "speedometer": "^1.1.0",
-    "standard": "*",
+    "standard": "^17.0.0",
     "string-to-stream": "^3.0.1",
-    "tape": "^5.0.1",
+    "tape": "^5.6.1",
     "thunky": "^1.1.0",
-    "wrtc": "^0.4.6",
-    "ws": "^7.3.1"
+    "wrtc": "^0.4.7",
+    "ws": "^7.5.9"
   },
   "keywords": [
     "data",
@@ -58,5 +57,8 @@
     "test-browser-local": "airtap --coverage --local -- test/*.js",
     "test-node": "WRTC=wrtc tape test/*.js",
     "coverage": "nyc report --reporter=text-lcov | coveralls"
+  },
+  "dependencies": {
+    "node-pre-gyp": "^0.17.0"
   }
 }
